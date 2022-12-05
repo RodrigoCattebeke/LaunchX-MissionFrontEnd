@@ -1,0 +1,700 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1370px;
+    min-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos del nav-bar */
+
+header{
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    max-width: 1370px;
+    background-color:rgba(255, 255, 255, 0.937);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.vaccination{
+    font-size: 20px;
+    margin-right: 50px;
+    letter-spacing: 1px;
+    color: rgb(41,73,199);
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 45px;
+}
+
+.links-textos{
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(113,127,150);
+    transition: color .5s;
+    cursor: pointer
+}
+
+.container-hoaxbuster{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 45px;
+    margin-left: 15px;
+    transition: background-color .5s;
+    background-color:rgb(44, 79, 220); 
+    border-radius: 4px;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+.container-hoaxbuster > a{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;    
+}
+
+
+
+/* Hover del nav-bar */
+
+.links-textos:hover{
+    color:rgb(201, 201, 201);
+}
+
+.container-hoaxbuster:hover{
+    background-color:rgb(41, 67, 169);
+    box-shadow: rgba(209, 218, 255, 0.545) 0 0 3px 2px ;
+}
+
+
+/* Empieza los estilos del main */
+
+
+.container-1{
+    display: flex;
+}
+
+        /* estilos del primer div, donde está el texto sobre la vacuna */
+
+
+.texto-fight-virus{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: white;
+    width: 50vw;
+    max-width: 1366px;
+    min-width: 50%;
+}
+
+.texto-fight-virus > div:nth-child(1){
+    margin-top: 70px;
+    width: 400px;
+}
+
+.texto-fight-virus > div:nth-child(1) > h1{
+   font-size: 50px;
+   letter-spacing: 1.5px;
+   color: rgb(31,62,114);
+}
+
+.p2{
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: rgb(115,128,151);
+}
+
+.texto-fight-virus > div:nth-child(2){
+    display: flex;
+    gap: 70px;
+    width: 400px;
+}
+
+        /* estilos Best Protection, Select Vaccines */
+
+.icons1{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.icons1 > p{
+    font-size: 13px;
+    color: rgb(70, 90, 124);
+    letter-spacing: 0.5px;
+}
+
+.verified , .star{
+    width: 17px;
+    height: 21px;
+    background-color: rgba(255, 231, 19, 0.111);
+    box-shadow: rgba(255, 231, 19, 0.132) 0px 0px 3px 2px;
+    margin-right: 12px;
+}
+
+
+        /* estilos de agendar vacuna */
+
+.schedule-div{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    width: 400px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.schedule{
+    margin-right: 12px;
+    width: 20px;
+    height: 21px;
+    background-color: rgba(122, 170, 254, 0.249);
+    box-shadow: rgba(122, 170, 254, 0.249) 0px 0px 3px 2px;
+}
+
+.schedule-div > p{
+    font-size: 20px;
+    letter-spacing: .4px;
+    color: rgb(46, 67, 103);
+}
+
+    /* Estilos pop up agendar vacuna */
+
+.schedule-pop{   
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 700px;
+    height: 100px;
+    top: 0px ;
+    left: 150px;
+    padding: 1px;
+    border: solid white 2px; 
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.874);
+    backdrop-filter: blur(5px);
+    box-shadow: black 0 3px 10px -8px ;
+    transition: 5s; 
+}
+
+.schedule-pop > form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    user-select: none;
+}
+
+.form-container{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container > div{
+    display: flex;
+    align-items: center;
+}
+
+.form-icon{
+    height: 2;
+    padding: 2px;
+    margin-right: 8px;
+    border-radius: 4px;
+    background-color: rgba(122, 170, 254, 0.249) ;
+    box-shadow: rgba(122, 170, 254, 0.07) 0 0 2px 2px;
+}
+
+.form-container > div > p {
+    font-size: 17px;
+    color: rgb(115,128,151);
+    height: max-content;
+    margin: 0;
+}
+
+.form-container > p{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(46, 67, 103);
+    height: 2px;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 35px;
+}
+
+form > input{
+    font-size: 15px;
+    background-color: rgb(44, 79, 220);
+    color: white;
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color .2s;
+    cursor: pointer;
+}
+
+form > input:hover{
+    background-color: rgb(38, 68, 185);
+
+}
+
+    /* estilos del segundo div, donde está la imagen del doctor */
+
+
+.container-img{
+    background-color: rgb(10, 140, 215);
+    width: 50%;
+    max-width: 1366px ;
+}
+
+.container-img > div {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    overflow: hidden;
+}
+
+
+.doctor1{
+    width: 800px;
+    height: 550px;
+}
+
+
+        /* Vacunas  */
+
+.foto-vacunas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    border-bottom: solid rgb(240, 239, 239) 2px  ;
+}
+
+.vacunas{
+    max-width: 1000px;
+    min-width: 700px;;
+    height: 60%;
+}
+
+
+        /* Por qué deberia vacunarse */
+
+.container-beneficios{
+    width: 100%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-bottom: solid rgb(240, 239, 239) 2px  ;
+
+}
+
+.beneficios-texto{
+    margin-left: 70px;
+    position: relative;
+    top: -50px;
+    box-shadow: white -90px 0 0 10px;
+}
+
+
+.titulos{
+    font-size: 30px;
+    background-color: white;
+    width: 350px;
+    height: 50px;
+    color: rgb(46, 67, 103);
+}
+ 
+.container-tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    min-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tarjetas{
+    width: 170px;
+    height: 250px;
+    background-color: white;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    box-shadow: rgba(128, 128, 128, 0.144) 0 0 5px .1px;
+    transition: box-shadow .5s;
+}
+
+.tarjetas:hover{
+    box-shadow: rgb(52,84,210) 0 0 50px -30px ;
+}
+
+.icons{
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgba(122, 170, 254, 0.249);
+    box-shadow: rgb(52,84,210) 0 0 5px -3px;
+
+}
+
+.tarjetas > h3{
+    font-weight: 400;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.tarjetas > p{
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(115,128,151)
+}
+
+
+        /* Estilos de preparaciones antes del vacunamiento */
+
+            /* Estilos imagen  */
+
+.container-preparations{
+    width: 100%;
+    height: 750px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-1-preparations{
+    display: flex;
+    position: relative;
+    width: 45%;
+    height: 375px;
+    top: 200px;
+    justify-content: right;
+    background-color: rgb(11,149,229);
+}
+
+.container-1-preparations > img {
+    width: 550px;
+    height: 545px;
+    position: relative;
+    top: -170px;
+}
+
+
+
+        /* Estilos parte del texto */
+
+
+.container-2-preparations{
+    /* width: 53% */
+    padding-left: 50px;
+    border-bottom: solid rgba(203, 203, 203, 0.362) 1px;
+}
+
+.container-2-tp{
+    position: relative;
+    top: -45px;
+    width: 95%;
+    height: 190px;
+    margin-bottom: 0;
+    background-color: white;
+    box-shadow: white -25px 0 0 0, white 40px 0 0 0;
+}
+
+.container-2-tp > h2{
+    width: max-content;
+}
+
+.container-2-tp > p{
+    margin-top: 50px;
+}
+
+.container-2-ts{
+    position: relative;
+    top: -30px;
+    margin: 0;
+}
+
+.container-2-ta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid rgba(196, 196, 196, 0.475) 1px;
+    border-radius: 5px;
+    width: 95%;
+    height: 55px;
+    max-width: 550px;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.expandir-2{
+    height: max-content;
+}
+
+.te{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
+    cursor: pointer;
+    border: solid rgba(204, 204, 204, 0.44) 1px;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: -1px;
+}
+
+.ocultar-te{
+    border-bottom: none;
+}
+
+.te > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.icon{
+    width: 25px;
+    height: 24px;
+    padding: 4px;
+    border-radius: 3px;
+    background-color: rgba(122, 170, 254, 0.249);
+    box-shadow: rgb(52,84,210) 0 0 5px -3px;
+}
+
+.te > div > p{
+    font-size: 18px;
+}
+
+.open-expand{
+    margin-right: 25px;
+}
+
+.container-2-ta > p{
+    font-size: 15px;
+    width: 75%;
+    margin: auto;
+    letter-spacing: 0; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+
+.ocultar-texto{
+    display: none;
+}
+
+         /* Estilos contactos de emergencia */
+        
+.container-contactos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 670px;
+    /* border-bottom: solid rgba(221, 221, 221, 0.352) 1px; */
+}
+
+.container-1-contactos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 200px;
+}
+
+.beneficios-texto > p{
+    letter-spacing: 0;
+    font-size: 15px;
+}
+
+.contactos{
+    display: grid;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: 170px 170px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    left: 25px;
+}
+
+.contactos-tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    border: solid rgba(228, 228, 228, 0.133) 2.4px;
+    border-radius: 5px;
+    transition: box-shadow .7s;
+}
+
+.contactos-tarjetas:hover{
+    box-shadow: rgb(52,84,210) 0 0 50px -30px ;
+}
+
+.contactos-tarjetas > div{
+    display: grid;
+    grid-template-columns: 30px 100px;
+    grid-template-rows: 30px 30px ;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.icon-contacto{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 5px;
+}
+
+.contactos-tarjetas > div > h3{
+    width: max-content;
+    font-weight: 400;
+    color: rgb(31,62,114);
+}
+
+.p-contacto{
+    width: max-content;
+    letter-spacing: 0;
+    font-size: 13px;
+}
+
+.contactos-tarjetas > button{
+    width: 150px;
+    height: 40px;
+    /* background-color:rgb(44, 79, 220);  */
+    background-color: rgba(122, 170, 254, 0.249);
+    color: rgb(44, 79, 220);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.contactos-tarjetas > button:hover{
+    background-color:rgb(44, 79, 220);
+    color: white
+}
+
+
+        /* estilos doctor con telefono */
+
+.container-2-img{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 305px;
+    position: relative;
+    top: 240px;
+    background-color: rgb(11,149,229);
+
+}
+
+.doctor2{
+    position: relative;
+    top: -200px;
+    width: 380px;
+    height: 505px;
+}
+
+
+        /* Estilos footer  */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(238,243,255);
+}
+
+.container-1-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 50px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.footer-vacination{
+    width: 50%;
+}
+
+.footer-vacination > p{
+    line-height: 20px;
+}
+
+.footer-datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+.datos > h2{
+    font-size: 20px;
+    width: max-content; 
+    margin: 0;
+    background-color: inherit ;
+}
+
+.datos > p{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.container-2-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.container-2-footer > div:nth-child(2){
+    display: flex;
+    gap: 20px;
+}
