@@ -39,7 +39,7 @@ body{
     height: 20%;
     max-height: 100px;
     position: relative;
-    top: -24px;
+    top: -10px;
 }
 
 .pokemon{
@@ -50,11 +50,12 @@ body{
     max-width: 190px;
     position: relative;
     top: 18px;
+    right: 4px;
 }
 
 .pokemon-img{
-    width: 90px;
-    height: 125px;
+    width: 100px;
+    height: 130px;
 }
 
 .descripcion{
@@ -66,12 +67,33 @@ body{
     color: rgb(3, 196, 3);
 }
 
+.nombrePokemon{
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.habilidades{
+    margin-top: 2px;
+    margin-bottom: 0px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.habilidadesPokemon{
+    margin-top: 5px;
+    font-size: 13px;
+    text-align: left;
+}
+
 .buscarPokemon{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 80px;
+    top: 77px;
     right: 270px;
     font-size: 9px;
     border-radius: 30px;
